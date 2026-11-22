@@ -1,6 +1,6 @@
 import { ArrowDown, Clock, MapPin, UtensilsCrossed } from "lucide-react";
 
-import heroImage from "@/assets/taqueria.jpg";
+import heroImage from "@/assets/Taqueria.jpg";
 import { Button } from "@/components/ui/button";
 import { BUSINESS } from "@/lib/business";
 
