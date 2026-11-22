@@ -12,7 +12,7 @@ export function Hero() {
       className="relative isolate flex min-h-[100svh] items-end overflow-hidden bg-ink text-ink-foreground md:items-center"
     >
       <img
-        src={heroImage.url}
+        src={heroImage}
         alt="Fachada de Tacos martin: toldo rojo, mesas del comedor a la izquierda y barra de cocina de acero inoxidable a la derecha"
         width={408}
         height={306}
