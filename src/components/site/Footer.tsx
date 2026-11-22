@@ -78,7 +78,7 @@ export function Footer() {
           <div className="mt-6 flex flex-col items-center gap-6 sm:flex-row sm:items-center sm:gap-8">
             <div className="flex size-32 shrink-0 items-center justify-center rounded-2xl bg-card p-3 shadow-card">
               <img
-                src={cuceiLogo.url}
+                src={cuceiLogo}
                 alt="Escudo oficial de CUCEI, Universidad de Guadalajara"
                 width={960}
                 height={1358}
