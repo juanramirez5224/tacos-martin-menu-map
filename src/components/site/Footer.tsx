@@ -1,6 +1,6 @@
 import { Clock, MapPin, Phone } from "lucide-react";
 
-import cuceiLogo from "@/assets/escudo-cucei.png.asset.json";
+import cuceiLogo from "@/assets/Escudo_CUCEI.png";
 import { BUSINESS, NAV_LINKS } from "@/lib/business";
 import { Logo } from "./Logo";
 
