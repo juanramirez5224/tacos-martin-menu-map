@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- Business facts (name, phone, address, hours, nav sections) live only in `src/lib/business.ts`; components import from there so details stay consistent and nothing is invented.
+- The site is a single page: sections are anchors (`#inicio`, `#nosotros`, `#menu`, `#contacto`, `#ubicacion`) composed in `src/routes/index.tsx` from components in `src/components/site/`, as the brief requires one scrolling page.
+- Contact form validation rules live in `src/lib/contact-schema.ts` (zod) with tests beside it; the form is front-end only and must not claim an email/order was sent beyond the on-screen confirmation.
