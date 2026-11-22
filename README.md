@@ -22,3 +22,9 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+## Datos escolares
+Alumno: Juan Pablo Ramirez Baltierra
+Profesor: Zeus Emanuel Gutierrez Cobián
+Materia: Desarrollo de aplicaciones web en la nube y moviles
+Ciclo: 2026B
+Centro Universitario de Ciencias Exactas e Ingenierias
