@@ -1,5 +1,6 @@
-import { Clock, ImageIcon, MapPin, Phone } from "lucide-react";
+import { Clock, MapPin, Phone } from "lucide-react";
 
+import cuceiLogo from "@/assets/escudo-cucei.png.asset.json";
 import { BUSINESS, NAV_LINKS } from "@/lib/business";
 import { Logo } from "./Logo";
 
@@ -75,13 +76,15 @@ export function Footer() {
             Información académica
           </h2>
           <div className="mt-6 flex flex-col items-center gap-6 sm:flex-row sm:items-center sm:gap-8">
-            <div
-              role="img"
-              aria-label="Espacio reservado para el logo de CUCEI / Universidad de Guadalajara"
-              className="flex size-32 shrink-0 flex-col items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-ink-border bg-ink text-ink-muted"
-            >
-              <ImageIcon className="size-7" aria-hidden="true" />
-              <span className="text-xs font-semibold uppercase tracking-wide">CUCEI Logo</span>
+            <div className="flex size-32 shrink-0 items-center justify-center rounded-2xl bg-card p-3 shadow-card">
+              <img
+                src={cuceiLogo.url}
+                alt="Escudo oficial de CUCEI, Universidad de Guadalajara"
+                width={960}
+                height={1358}
+                loading="lazy"
+                className="h-full w-auto object-contain"
+              />
             </div>
             <dl className="grid w-full gap-x-8 gap-y-4 sm:grid-cols-2">
               {ACADEMIC_INFO.map((item) => (

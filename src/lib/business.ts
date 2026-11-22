@@ -15,11 +15,13 @@ export const BUSINESS = {
     "Calle Cobre, Colonia Arenales Tapatíos, C.P. 45065 / 45066, Zapopan, Jalisco, México",
 } as const;
 
-// No street number or coordinates were provided, so Maps receives the address as a search query.
-const MAPS_QUERY = "Calle Cobre, Arenales Tapatíos, Zapopan, Jalisco, México";
+// Exact location provided by the owner: the "Tacos Martín" place page on Google Maps.
+export const MAPS_PLACE_URL = "https://maps.app.goo.gl/RewUSQSspEu9RWU96";
 
-export const MAPS_DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(MAPS_QUERY)}`;
-export const MAPS_EMBED_URL = `https://www.google.com/maps?q=${encodeURIComponent(MAPS_QUERY)}&z=15&output=embed`;
+// Pin of the place page above, so the embedded map centers on the business itself.
+export const BUSINESS_COORDINATES = { lat: 20.6362047, lng: -103.468758 } as const;
+
+export const MAPS_EMBED_URL = `https://www.google.com/maps?q=${BUSINESS_COORDINATES.lat},${BUSINESS_COORDINATES.lng}&z=17&output=embed`;
 
 export const NAV_LINKS = [
   { id: "inicio", label: "Inicio" },

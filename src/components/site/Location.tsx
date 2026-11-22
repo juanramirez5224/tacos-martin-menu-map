@@ -1,7 +1,7 @@
 import { Clock, MapPin, Navigation, Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { BUSINESS, MAPS_DIRECTIONS_URL, MAPS_EMBED_URL } from "@/lib/business";
+import { BUSINESS, MAPS_EMBED_URL, MAPS_PLACE_URL } from "@/lib/business";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 
@@ -67,7 +67,7 @@ export function Location() {
 
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
               <Button asChild variant="hero" size="xl">
-                <a href={MAPS_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer">
+                <a href={MAPS_PLACE_URL} target="_blank" rel="noopener noreferrer">
                   <Navigation />
                   Cómo llegar
                   <span className="sr-only">(se abre Google Maps en una pestaña nueva)</span>
@@ -84,7 +84,7 @@ export function Location() {
 
           <Reveal delay={100} className="overflow-hidden rounded-4xl bg-card shadow-card">
             <iframe
-              title="Mapa de la zona de Calle Cobre, Arenales Tapatíos, Zapopan"
+              title="Mapa de la ubicación exacta de Tacos Martín, Calle Cobre, Arenales Tapatíos, Zapopan"
               src={MAPS_EMBED_URL}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

@@ -1,6 +1,6 @@
 import { ArrowDown, Clock, MapPin, UtensilsCrossed } from "lucide-react";
 
-import heroImage from "@/assets/hero-tacos-al-pastor.webp";
+import heroImage from "@/assets/taqueria-fachada.jpg.asset.json";
 import { Button } from "@/components/ui/button";
 import { BUSINESS } from "@/lib/business";
 
@@ -12,10 +12,10 @@ export function Hero() {
       className="relative isolate flex min-h-[100svh] items-end overflow-hidden bg-ink text-ink-foreground md:items-center"
     >
       <img
-        src={heroImage}
-        alt="Tres tacos al pastor con piña, cebolla, cilantro y limón junto a una salsa roja"
-        width={1600}
-        height={900}
+        src={heroImage.url}
+        alt="Fachada de Tacos martin: toldo rojo, mesas del comedor a la izquierda y barra de cocina de acero inoxidable a la derecha"
+        width={408}
+        height={306}
         fetchPriority="high"
         className="absolute inset-0 -z-20 h-full w-full object-cover object-[70%_center]"
       />
